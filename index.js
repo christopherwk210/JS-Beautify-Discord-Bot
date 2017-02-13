@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Beautify = require('js-beautify').js_beautify;
 
 const client = new Discord.Client();
-const cleanCodeExp = new RegExp(/([`]{3})(clean-code)([^`]*)([`]{3})/g);
+const cleanCodeExp = new RegExp(/([`]{3})clean-code([^```]*)([`]{3})/g);
 const beautifyOptions = require("./jsbeautify.json");
 
 var auth;
