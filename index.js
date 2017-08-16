@@ -47,7 +47,7 @@ client.on('message', message => {
     res = res.replace(/(clean-code)/g, 'javascript\n');
 
     // Send it to the channel!
-    message.channel.sendMessage(res)
+    message.channel.send(res)
       .then(message => console.log(`Sent message: ${message.content}`))
       .catch(console.error);
   }
